@@ -1,5 +1,6 @@
 # BINGOOO!
 **Version 1.0**
+
 Este proyecto es un generador de Bingo con tablas versión Guayaquil, Ecuador.
 Es uno de mis primerísimos proyectos, hecho para mi querida prima Milenky :D
 
@@ -45,6 +46,7 @@ EL programa nos da la opcion de:
 * Determinar cuantas tablas queremos
 Esta es la interfaz simple del programa:
 ![alt text](images/programa_interfaz.png "Interfaz del programa")
+
 Al darle click al botón, nos genera un archivo pdf con todas las tablas que determinamos junto a los encabezados y la frase.
 El formato de cada tabla es el siguiente:
 ![alt text](images/tabla_formato.png "Formato de tabla")
