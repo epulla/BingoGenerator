@@ -5,20 +5,15 @@ Codigo generador de tablas en un pdf
 import numpy as np
 import matplotlib.pyplot as plt
 import tabla as tbl
-from PIL import Image, ImageDraw, ImageFont, ImageFile
+from PIL import Image, ImageDraw, ImageFont
 import os
 from fpdf import FPDF
-import time
-import platform
 
-WINDOWS_OS = platform.system() == 'Windows'
 height_text = 300 #Tamanio del encabezado
 font_size = 75 #Tamanio de fuente del encabezado
 encabezado_separador = 3 #tamanio del separador entre el encabezado y las tablas
 line_limit = 25 #numero de palabras por linea
 
-if WINDOWS_OS:
-    ImageFile.LOAD_TRUNCATED_IMAGES = True
 """
 INPUT:
 La funcion recibe el numero de tablas o paginas de pdf (num_tablas), el encabezado (text)
@@ -42,13 +37,11 @@ def tables_to_pdf(num_tablas,text,palabra):
             else:
                 table_to_png(tabla)
             images.append(Image.open("tabla1.png"))
-            if WINDOWS_OS:
-                os.remove("tabla1.png")
+            os.remove("tabla1.png")
         table_gye(images,text,i)
         pdf.add_page()
         pdf.image("tablaGYE"+str(i)+".png",w=190,h=260)
-        if WINDOWS_OS:
-            os.remove("tablaGYE"+str(i)+".png")
+        os.remove("tablaGYE"+str(i)+".png")
     pdf.output("tablas_imprimir.pdf","F")
 
 def table_gye(images,text,num):
