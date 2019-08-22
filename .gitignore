@@ -1,0 +1,12 @@
+
+
+ # Python compiled files
+ *.pyc
+ *.pyo
+
+ # PDF and image files
+ *.png
+ *.pdf
+
+ # pycache folder
+ __pycache__
