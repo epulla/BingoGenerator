@@ -2,7 +2,7 @@
 **Version 1.0**
 
 Este proyecto es un generador de Bingo con tablas versión Guayaquil, Ecuador.
-Es uno de mis primerísimos proyectos, hecho para mi querida prima Milenky :D
+Es uno de mis primerísimos proyectos como estudiante de programación :D
 
 El programa se puede ejecutar en:
 - [x] Linux/Ubuntu
